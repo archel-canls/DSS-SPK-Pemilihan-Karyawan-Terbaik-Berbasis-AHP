@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - DSS-AHP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+/* --- Style untuk Gradasi Background Biru dan Hijau Penuh --- */
+body {
+    background: linear-gradient(to bottom right, #2563eb, #10b981); /* Gradasi dari biru ke hijau */
+    background-attachment: fixed;
+    background-size: cover;
+    /* Warna teks utama kontras dengan background ini */
+    color: #ffffff; /* Tambahkan warna teks default putih untuk body */
+}
+
+/* --- Style yang sudah ada untuk komponen lain (pertahankan) --- */
+
+/* Style untuk Tombol Biru Matang Keren */
+.luxury-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 3.5rem;
+    border-radius: 9999px;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(29, 78, 216, 0.4),
+                0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.luxury-button.bg-blue-700 {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border: 2px solid #1c3faa;
+}
+
+.luxury-button.bg-blue-700:hover {
+    background: linear-gradient(135deg, #1d4ed8, #2563eb);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(29, 78, 216, 0.6),
+                0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.luxury-button.bg-blue-700:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(29, 78, 216, 0.3),
+                0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.luxury-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-30deg);
+    transition: all 0.7s ease-in-out;
+    z-index: 1;
+}
+
+.luxury-button:hover::before {
+    left: 100%;
+}
+
+.luxury-button i, .luxury-button span {
+    position: relative;
+    z-index: 2;
+}
+
+/* Style untuk Paragraf Penjelasan Kuning */
+.explanation-text {
+    color: #fcd34d; /* Tailwind yellow-400 */
+    text-shadow: 0 0 8px rgba(252, 211, 77, 0.6),
+                 0 0 15px rgba(252, 211, 77, 0.4);
+    line-height: 1.8;
+    letter-spacing: 0.025em;
+}
+
+/* Style untuk Background Nama Anggota */
+.luxury-list-item {
+    background-color: #e0f2fe; /* light blue background */
+    color: #1f2937; /* dark gray text */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+/* Penyesuaian warna untuk judul "Oleh Kelompok 3" */
+.group-title {
+    color: #ffffff; /* Menggunakan warna putih agar kontras dengan background gradasi */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Tambahkan shadow agar lebih terlihat */
+}
+</style>
+<body class="luxury-header flex items-center justify-center min-h-screen">
+    <div class="text-center p-4">
+        <h1 class="text-3xl md:text-5xl font-display font-extrabold text-white tracking-tight leading-none">
+            SELAMAT DATANG!!
+        </h1><br>
+        <p class="explanation-text text-xl md:text-2xl leading-relaxed mb-8 font-semibold">
+            Sistem ini dirancang untuk membantu Anda dalam proses pengambilan keputusan pemilihan karyawan terbaik
+            menggunakan Analytical Hierarchy Process (AHP).
+        </p>
+        <a href="ahp.html" class="luxury-button bg-blue-700"> <i class="fas fa-play-circle mr-3"></i> Mulai Aplikasi AHP
+        </a>
+        <div class="mt-8">
+            <h3 class="text-2xl font-display font-bold mb-4 group-title">Oleh Kelompok 3(4E):</h3>
+            <ul class="flex flex-wrap justify-center gap-4">
+                <li class="luxury-list-item">1.Arif Alfian Choirul Anwar (23670119)
+                </li>
+                <li class="luxury-list-item">2.Alivia Nuraida (23670132)
+                </li>
+                <li class="luxury-list-item">3.Rahardiana Fauziatun Nufus(23670110)</li>
+                <li class="luxury-list-item">4.Kelvin bintang Ardiansyah (23670148)</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
